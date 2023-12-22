@@ -1,4 +1,4 @@
-package 입출력과사칙연산;
+package 입출력과사친연산.AB;
 
 import java.util.Scanner;
 public class AB {

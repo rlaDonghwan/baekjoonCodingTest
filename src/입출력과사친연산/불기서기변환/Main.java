@@ -1,4 +1,4 @@
-package 불기서기변환;
+package 입출력과사친연산.불기서기변환;
 
 import java.util.Scanner;
 

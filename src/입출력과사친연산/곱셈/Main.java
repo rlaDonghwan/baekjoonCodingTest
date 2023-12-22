@@ -1,5 +1,5 @@
-package 곱셈;
-//세자릿 수 곱셈
+package 입출력과사친연산.곱셈;
+//세자릿 수 입출력과사친연산.곱셈
 //
 import java.util.Scanner;
 
