@@ -1,4 +1,4 @@
-package backJoon.더하기사이클;
+package backJoon.더하기사이클;
 
 import java.io.*;
 
