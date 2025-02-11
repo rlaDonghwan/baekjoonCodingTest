@@ -1,4 +1,4 @@
-package backJoon.팩토리얼;
+package backJoon.팩토리얼0개의개수;
 
 import java.io.*;
 
@@ -7,11 +7,22 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        // n! = n \times (n-1) \times (n-2)
-
         int num = Integer.parseInt(br.readLine());
-        bw.write(factorial(num)+"\n");
+        int fac = factorial(num);
+        int dap = trailingZeroCount(num);
+
+        bw.write(dap+"\n");
+        bw.write(fac+"\n");
         bw.flush();
+    }
+
+    public static int trailingZeroCount(int n) {
+        int count = 0;
+        // 5, 25, 125, ... 로 나누며 더해줌
+        for (long i = 5; i <= n; i *= 5) {
+            count += (int) (n / i);
+        }
+        return count;
     }
 
     public static int factorial(int n) {
